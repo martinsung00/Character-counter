@@ -13,7 +13,7 @@ const fizzBuzz = (rangeOne, rangeTwo) => {
 // Number to put in range will serve as the start of the range as well as number to pe put into the array; but it needs to subtract one so it can prevent bypassing the starting number
   let numberToPutInArr = rangeOne - 1;
 // For loop to add one to the increment number 
-    for (i = 1; i < rangeTwo; i++) {
+    for (i = 0; i < rangeTwo; i++) {
       numberToPutInArr = numberToPutInArr + 1
 // If Number to put in array is divisible by 3 AND 5, put fizzbuzz into the array instead
         if (numberToPutInArr % 3 === 0 && numberToPutInArr % 5 === 0) {
