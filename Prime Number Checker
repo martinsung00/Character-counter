@@ -1,0 +1,18 @@
+/* Create a function that checks if the number is prime or not.
+If it is a prime number return true;
+If it is not a prime number return false; 
+*/
+
+// Initialize function
+const isPrime = (num) => {
+// For loop starts at 2 as one cannot divide by 0, and dividing by 1 will always have no remainder. Additionally, dividng by the number itself will always have no remainder, so it will falsely return false unless. Therefore to bypass this, set the limit so the number will not divide itself.
+  for (i = 2; i < num - 1; i++) {
+// If the number is divisible by i; then it will not pass the test of being a prime #.
+    if (num % i === 0) {
+      return false
+    }
+// If the number is not divisible by any numbers before it, it will be logged as a prime #, hence true.
+  else return true
+  }
+}
+console.log (isPrime(6))
