@@ -33,4 +33,3 @@ const findMinMax = (inputArray) => {
 
 console.log(findMinMax(myArray))
 
-eval("-3<0")
