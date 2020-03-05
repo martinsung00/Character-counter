@@ -29,6 +29,8 @@ let myPenguin = {
 
 // First add the new key/value penguin's favorite food.
 myPenguin.favoriteFoods = ['Fish', 'Penguin feed', 'Other penguins'];
+// Set a variable to represent myPenguin.favoriteFoods. This makes the .push much easier to read and understand.
+let penguinFavoriteFoods = myPenguin.favoriteFoods;
 // Second set a variable equal to the object.value_inside_array[of_index]
-myPenguin.favoriteFoods.push('Fish bone')
+penguinFavoriteFoods.push('Fish bone')
 console.log(myPenguin.favoriteFoods)
