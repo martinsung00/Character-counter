@@ -39,6 +39,6 @@ function insertIntoArrayVer2(inputArray, elementToAdd, indexLocation) {
 // After adding in the element to the first array, we put the entire array together.
     concatArray = firstHalf.concat(secondHalf);
     return concatArray;
-}
+};
 
 console.log(insertIntoArrayVer2(myArray, 5, 3))

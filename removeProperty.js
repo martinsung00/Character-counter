@@ -12,10 +12,12 @@ console.log(obj.name); // --> undefined
 function removeProperty(obj, key) {
     delete obj[key];
     return obj;
-}
+};
+
 let myObj = {
     name: 'Sam',
     age: 20
-}
+};
+
 removeProperty(myObj, 'name');
 console.log(myObj)

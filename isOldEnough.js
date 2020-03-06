@@ -14,16 +14,14 @@ function isOldEnoughToDrink(age) {
 // If the age is over 21, return true.
         if (age >= 21) {
             return true;
-        } 
 // Else if the age is below 21, return false.
-        else {
+        } else {
             return false;
         }
-    }
-    else {
+    } else {
         return null;
 
     }
-}
+};
 console.log (isOldEnoughToDrink(22))
 

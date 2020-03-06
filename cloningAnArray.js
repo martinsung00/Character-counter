@@ -9,12 +9,12 @@
 let myArray = [1, 3, 3, 7, 2, 8, 12, 0, 8, -3];
 
 function copyArray(inputArray) {
-    let cloneArray = []
+    let cloneArray = [];
     for (i = 0; i < inputArray.length; i++) {
         cloneArray.push(inputArray[i]);
     }
     return cloneArray;
-}
+};
 
 console.log(copyArray(myArray))
 

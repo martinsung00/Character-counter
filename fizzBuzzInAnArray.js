@@ -9,30 +9,30 @@ When the number is evenly divisible by three and five, push 'fizzbuzz' */
 // Initialize function fizzBuzz
 const fizzBuzz = (rangeOne, rangeTwo) => {
 // Initialize variables
-  let fbArray = [];
+    let fbArray = [];
 // Number to put in range will serve as the start of the range as well as number to pe put into the array; but it needs to subtract one so it can prevent bypassing the starting number
-  let numberToPutInArr = rangeOne - 1;
+    let numberToPutInArr = rangeOne - 1;
 // For loop to add one to the increment number 
     for (i = 0; i < rangeTwo; i++) {
       numberToPutInArr = numberToPutInArr + 1
 // If Number to put in array is divisible by 3 AND 5, put fizzbuzz into the array instead
         if (numberToPutInArr % 3 === 0 && numberToPutInArr % 5 === 0) {
-          fbArray.push ('fizzbuzz')
+          fbArray.push ('fizzbuzz');
         }
 // If Number to put in array is divisible by 5, put buzz into the array instead
         else if (numberToPutInArr % 5 === 0) {
-          fbArray.push ('buzz')
+          fbArray.push ('buzz');
 // If Number to put in array is divisible by 3, put fizz into the array instead
         }
         else if (numberToPutInArr % 3 === 0) {
-          fbArray.push ('fizz')
+          fbArray.push ('fizz');
 // If Number to put in array is not divisible by 3 and/or 5, put in the regular number
         }
         else {
-          fbArray.push (numberToPutInArr)
+          fbArray.push (numberToPutInArr);
         }
     }
-  return fbArray
-}
+  return fbArray;
+};
 
 console.log (fizzBuzz (1, 100))

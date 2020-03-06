@@ -10,5 +10,5 @@ const isPrime = (num) => {
         }
     }
     return num > 1;
-}
+};
 console.log(isPrime(21))

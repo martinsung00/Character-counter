@@ -23,14 +23,14 @@ function removeFromArrayVer2(inputArray, indexLocation) {
     let secondHalf = [];
     let concatArray = [];
 // The loop will read through the input array until it reaches the number before the index location.
-for (i = 0; i < inputArray.length; i++) {
+    for (i = 0; i < inputArray.length; i++) {
 // All the numbers before the index location will be stored within the first half of the array.
-    if (i < indexLocation) {
+        if (i < indexLocation) {
         firstHalf.push(inputArray[i]);
 // All the numbers after the index location will be stored within the second half of the array.
-    } else {
+        } else {
         secondHalf.push(inputArray[i]);
-            }
+        }
     }
 // Since the element to remove is stored in the second half of the array, we need to shift the array to the right by one position to remove the desired element.
     secondHalf.shift();
@@ -41,4 +41,3 @@ for (i = 0; i < inputArray.length; i++) {
 
 console.log(myArray)
 console.log(removeFromArray(myArray, 6))
-

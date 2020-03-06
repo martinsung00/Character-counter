@@ -14,14 +14,14 @@ console.log(output); // --> 'value'
 
 let myObj = {
     myKey: 'My Value'
-  };
+};
+
 function getProperty(obj, key) {
 // If the object has no property (undefined), then it will return undefined
     if (obj === undefined) {
         return undefined;
 // Else proceed normally and get the object and value
-    } else
-    {
+    } else {
 // Return the selected key and value within the object
         return obj[key];
     }

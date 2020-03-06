@@ -10,15 +10,15 @@
 let testArray = [1, 3, 3, 7, 2, 8, 12, 0, 8, -3]
 
 // Initialize the function
-const getArraySum = function(inputArray) {
+function getArraySum(inputArray) {
 // Start sum out as 0
     let sum = 0
     for (i = 0; i < inputArray.length; i++) {
 // As the loop keeps going, it will add everything inside. New sum will be replaced by old sum (0) + first num etc.
-        sum += inputArray[i]
+        sum += inputArray[i];
     }
     return sum;
-  };
+};
 
 // List all the numbers we will be adding in the array
   console.log(testArray)

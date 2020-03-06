@@ -6,7 +6,7 @@ a value of true
 function addProperty(obj, key) {
 // Since the prompt asks that the value is equal to true, the value will equal to "true"   
     obj[key] = true;
-}
+};
 // Set my object to blank object
 const myObj = {};
 addProperty(myObj, 'myProperty');

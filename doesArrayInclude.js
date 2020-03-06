@@ -22,7 +22,7 @@ function doesArrayInclude(inputArray, numberToLookFor) {
     }
 // Else it will return false. This can also be replaced with a message.
     return false;
-}
+};
 
 // Second Version of the function will utilize the === method. The value (i) within the array will be compared with the number to look for.
 function doesArrayIncludeVer2(inputArray, numberToLookFor) {
@@ -35,7 +35,7 @@ function doesArrayIncludeVer2(inputArray, numberToLookFor) {
     }
 // Or else return false.
     return false;
-}
+};
 
 // Version 3 is the same as version 1. It simply sees if it can find a string instead of a number inside an array.
 function doesArrayIncludeVer3(inputArray, itemToLookFor) {
@@ -45,7 +45,7 @@ function doesArrayIncludeVer3(inputArray, itemToLookFor) {
         }
     }
     return false;
-}
+};
 
 console.log(doesArrayInclude(myArray, 0))
 console.log(doesArrayIncludeVer2(myArray, 8))

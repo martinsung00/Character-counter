@@ -26,6 +26,6 @@ function findDuplicate (inputArray){
         }
     }
     return null;
-}
+};
 
 console.log(findDuplicate(myArray))

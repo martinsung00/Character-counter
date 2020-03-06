@@ -1,6 +1,6 @@
 /*
   (EASY)
-  Add a new property to your penguin called favoriteFoods and set it equal to an array containing a list of three strings.
+  Print the length of your penguin's favoriteFoods array to the console with console.log()
 */
 
 // Object of interest (pre-set)
@@ -26,15 +26,15 @@ let myPenguin = {
       }
     }
   };
-// Your code here.
 
-// Initialize a function to add in a new key and value; technically there is no need for a function.
-function addFavoriteFoods(inputObject){
+// First add the new key/value penguin's favorite food.
+myPenguin.favoriteFoods = ['Fish', 'Penguin feed', 'Other penguins'];
 
-  // To add a key and a value, use this formula: object.new_key = new_value.
-  myPenguin.favoriteFoods = ['Fish', 'Penguin feed', 'Other penguins'];
-  return myPenguin;
-};
+// Set a variable to represent myPenguin.favoriteFoods. This makes the .push much easier to read and understand.
+let penguinFavoriteFoods = myPenguin.favoriteFoods;
 
-// Test to see if the new key and value has been added.
-console.log(addFavoriteFoods(myPenguin))
+// Push the new item into the array using the variable.
+penguinFavoriteFoods.push('Fish bone')
+
+// Log the length of the array.
+console.log(penguinFavoriteFoods.length)

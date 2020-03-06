@@ -24,6 +24,6 @@ function findDuplicate (inputArray1, inputArray2){
 // Return the duplicates array.    
     return duplicates;
     }
-}
+};
 
 console.log(findDuplicate(myArray, myArray2))

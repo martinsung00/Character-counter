@@ -18,6 +18,6 @@ function getAverage(inputArray) {
     }
 // Divide the sum of all numbers by the array length to get the average.
     return sum / inputArray.length;
-}
+};
 
 console.log(getAverage(myArray))

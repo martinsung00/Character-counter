@@ -10,7 +10,6 @@ myArray = [1, 3, 10, 3, 7, 20, 10, 2, 8, 12, 40, 0, 8, -3]
 function checkSumOfTens (inputArray) {
     let divisibleByTen = [];
     let sum = 0;
-
     for (let i = 0; i < inputArray.length; i++) {
         if(inputArray[i] % 10 === 0) {
             divisibleByTen.push(i);
@@ -23,6 +22,7 @@ function checkSumOfTens (inputArray) {
         return true;
     }
     else return false;
-}
+};
+
 console.log(checkSumOfTens(myArray));
     

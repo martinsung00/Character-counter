@@ -1,9 +1,9 @@
 /*
   (EASY)
-  Create a new variable called firstFavFood and set it equal to the first item in your penguin's array of favorite foods.
+  Without modifying any of your previous code, write a new line of code that changes the value of the last item in the list to "pineapples" (overwriting the previous value).
 */
 
-// Object (pre-set)
+// Object of interest (pre-set)
 let myPenguin = {
     character: "Penguin McPenguinFace",
     origin: "Donald Duck",
@@ -30,8 +30,18 @@ let myPenguin = {
 // First add the new key/value penguin's favorite food.
 myPenguin.favoriteFoods = ['Fish', 'Penguin feed', 'Other penguins'];
 
-// Second set a variable equal to the object.value_inside_array[of_index]
-let whatToFeedMyPenguin = myPenguin.favoriteFoods[0];
+// Set a variable to represent myPenguin.favoriteFoods. This makes it easier to remember the path to the array inside the object.
+let penguinFavoriteFoods = myPenguin.favoriteFoods;
 
-// Test to see whatToFeedMyPenguin =
-console.log(whatToFeedMyPenguin)
+// Push the new item into the array using the variable.
+penguinFavoriteFoods.push('Fish bone')
+
+// Remove last element in the array.
+penguinFavoriteFoods.pop();
+
+// Push a new element called pineapples.
+
+penguinFavoriteFoods.push('Pineapple')
+
+// Log what is inside the array to check.
+console.log(penguinFavoriteFoods)

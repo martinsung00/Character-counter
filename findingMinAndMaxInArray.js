@@ -24,12 +24,12 @@ const findMinMax = (inputArray) => {
     for (x = 0; x < inputArray.length; x++){
 // If the number inside the array is smaller than the current 'min', replace it.
         if (inputArray[x] < min){
-            min = inputArray[x]
+            min = inputArray[x];
         }
     }
 // Return the maximum and minimum number.
     return 'minimum: ' + min + ' maximum: ' + max;
-}
+};
 
 console.log(findMinMax(myArray))
 

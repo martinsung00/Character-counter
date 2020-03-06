@@ -1,9 +1,9 @@
 /*
   (EASY)
-  Access your penguin's second favorite food and print it to the console using console.log().
+  Write a for loop to iterate through every food in your penguin's favoriteFood property and print each one to the console.
 */
 
-// Object of interest (pre-set)
+// Object (pre-set)
 let myPenguin = {
     character: "Penguin McPenguinFace",
     origin: "Donald Duck",
@@ -27,7 +27,16 @@ let myPenguin = {
     }
   };
 
-// Set what the value is for the key.
+// First add the new key/value penguin's favorite food.
 myPenguin.favoriteFoods = ['Fish', 'Penguin feed', 'Other penguins'];
-// Log what the second favorite food is.
-console.log(myPenguin.favoriteFoods[1]);
+
+// Set a variable to represent myPenguin.favoriteFoods. This makes it easier to remember the path to the array inside the object.
+let penguinFavoriteFoods = myPenguin.favoriteFoods;
+
+// Push the new item into the array.
+penguinFavoriteFoods.push('Fish bone')
+
+// For loop to iterate all elements in the array, and log all the elements once.
+for (i = 0; i < penguinFavoriteFoods.length; i++) {
+    console.log(penguinFavoriteFoods[i]);
+};

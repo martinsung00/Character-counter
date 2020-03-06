@@ -23,17 +23,17 @@ function findSecondLargestNum(inputArray){
 // The clone array will have the first largest # we found removed. That way the second largest # becomes the first.
     for (x = 0; x < cloneOfArray.length; x++){
         if (cloneOfArray[x] === firstLargest) {
-            cloneOfArray.splice(x, 1)
+            cloneOfArray.splice(x, 1);
         }
     }
 // Repeat the loop to find the largest # in the clone array with the first largest number removed.
     for (y = 0; y < cloneOfArray.length; y++) {
         if (cloneOfArray[y] > secondLargest){
-            secondLargest = cloneOfArray[y]
+            secondLargest = cloneOfArray[y];
         }
     }
 // Now we hae the second largest #.
-    return secondLargest
-}
+    return secondLargest;
+};
 
 console.log(findSecondLargestNum(myArray))

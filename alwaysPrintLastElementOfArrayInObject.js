@@ -1,9 +1,9 @@
 /*
   (EASY)
-  Add another food to the end of the list.
+  Create a new variable named lastFavoriteFood that will always point to the last element of your penguin's favoriteFoods array, no matter how many items are in the list.
 */
 
-// Object of interest (pre-set)
+// Object (pre-set)
 let myPenguin = {
     character: "Penguin McPenguinFace",
     origin: "Donald Duck",
@@ -28,13 +28,13 @@ let myPenguin = {
   };
 
 // First add the new key/value penguin's favorite food.
-myPenguin.favoriteFoods = ['Fish', 'Penguin feed', 'Other penguins'];
+myPenguin.favoriteFoods = ['Fish', 'Penguin feed', 'Other penguins', 'Test item', 'Test item 2'];
 
-// Set a variable to represent myPenguin.favoriteFoods. This makes the .push much easier to read and understand.
+// Set a variable to represent myPenguin.favoriteFoods. This makes it easier to remember the path to the array inside the object.
 let penguinFavoriteFoods = myPenguin.favoriteFoods;
 
-// Push the new item into the array.
-penguinFavoriteFoods.push('Fish bone')
+// Create a variable that will always log the last element of the array, no matter the length.
+let lastFavoriteFood = penguinFavoriteFoods[penguinFavoriteFoods.length - 1];
 
-// Print what is in the array after the push.
-console.log(myPenguin.favoriteFoods)
+// Console log lastFavoriteFood to verify it.
+console.log(lastFavoriteFood);
