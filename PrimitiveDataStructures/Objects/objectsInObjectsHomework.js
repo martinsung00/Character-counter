@@ -79,4 +79,3 @@ const getValues = function(myPenguin) {
   };
 
 console.log(getValues(myPenguin));
-

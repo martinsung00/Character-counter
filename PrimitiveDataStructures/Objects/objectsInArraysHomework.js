@@ -1,5 +1,6 @@
 // Pre-set object
 let myPenguin = {
+    name: "Penguin McPenguinFace",
     character: "Penguin McPenguinFace",
     origin: "Donald Duck",
     notes: 'A baby penguin in the classic 1939 cartoon "Donald\'s Penguin".',
@@ -117,12 +118,48 @@ penguins[0].sayHello();
   Write a for loop to iterate through every penguin in the array and print the value of each penguin's name property to the console.
 */
 
-function printValue(penguins) {
-  let value;
+function printName(penguins) {
   for (let i = 0; i < penguins.length; i++){
-      for (let key of penguins[i]) {
-        value = penguins[i][key];
-        console.log(value); 
-      }
-    };
+      console.log(penguins[i].name); 
   }
+};
+console.log(printName(penguins));
+
+/*
+  (MEDIUM)
+  Write a for loop to call the sayHello method of every penguin in the array!
+*/
+
+function printSayHello(penguins) {
+  for (let i = 0; i < penguins.length; i++){
+      console.log(penguins[i].sayHello()); 
+  }
+};
+console.log(printSayHello(penguins));
+
+/*
+  (MEDIUM)
+  Write a for loop to iterate through every penguin in the array, and add a new property to each penguin called numberOfFeet with the value 2.
+*/
+
+function addNumOfFeet(penguins) {
+  for (let i = 0; i < penguins.length; i++){
+      penguins[i].numberOfFeet = 2;
+  }
+};
+console.log(addNumOfFeet(penguins));
+
+/*
+  (HARD)
+  Write another for loop to iterate through every penguin in the array, and for each penguin that can fly, print to the console a message containing the penguin's name and " can fly!" -- for example, "Gunter can fly!" or "Ramón can fly!" (Don't do anything for the penguins that cannot fly.)
+*/
+
+function canPenguinFly(penguins) {
+  for (let i = 0; i < penguins.length; i++){
+      if (penguins[i].canFly === true){
+        console.log(penguins[i].name + ' can fly!');
+      }
+  }
+};
+
+console.log(canPenguinFly(penguins))
