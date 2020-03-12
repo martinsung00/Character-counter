@@ -81,7 +81,8 @@ console.log(penguins[0]);
   Create a new variable called secondPenguin and set it equal to the second penguin in your penguins array.
 */
 
-secondPenguin = penguins[2];
+secondPenguin = penguins[1];
+console.log(secondPenguin)
 
 /*
   (EASY)
@@ -89,7 +90,7 @@ secondPenguin = penguins[2];
 */
 
 penguins.push(myPenguin);
-console.log(penguins);
+console.log(penguins[2].name);
 
 /*
   (EASY)
