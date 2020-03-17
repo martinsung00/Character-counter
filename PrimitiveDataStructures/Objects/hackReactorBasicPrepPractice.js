@@ -243,18 +243,13 @@ function convertObjectToArray(object) {
   let output = [];
   let value;
   for (let key in object) {
+    let tempArray = []; 
+// Create temporary array to store each key and value pair throughout the iteration. I.e 1st iteration: [key, object].   
     value = object[key];
-    console.log('key: ', key);
-    console.log('value: ', value);
-
-    let tempArray = [];
     tempArray.push(key);
     tempArray.push(value);
-
-    console.log('tempArray: ', tempArray)
-
+// Push that temporary array into the output array.
     output.push(tempArray);
-    console.log('outer Array: ', output);
   }
   return output;
 };
