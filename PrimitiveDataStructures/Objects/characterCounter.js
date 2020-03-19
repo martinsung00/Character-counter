@@ -6,7 +6,6 @@ function countAllCharacters(string) {
 // Create an object to store key (representing the character) and value (representing the count).
     let frequencies = {};
     for (i = 0; i < string.length; i++) {
-// The current letter variable will represent the letter which we are at in the interation.
       let currentLetter = string[i]
 // If the character is missing in the object frequencies, we give it a value of 1 (first time we've seen it)
       if (frequencies[currentLetter] === undefined) {

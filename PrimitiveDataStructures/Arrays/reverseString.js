@@ -6,7 +6,6 @@
 */
 
 function reverseString(string) {
-// Declare a variable to build the new reverse string.
     let newString = "";
 // Iteration starts from the end, and goes backwards to the front. I.e for 'Hello', the iteration will read from o to H.
     for (var i = string.length - 1; i >= 0; i--) {
