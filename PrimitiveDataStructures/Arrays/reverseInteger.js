@@ -14,7 +14,7 @@ function reverseInteger(integer) {
     let newInteger = '';
     let tempInteger = integer.toString(integer.length);
     let tempArray = tempInteger.split('');
-        if (integer >= 0) {
+    if (integer >= 0) {
         for (i = tempArray.length - 1; i >= 0; i--) {
             newInteger += tempArray[i]
         }
