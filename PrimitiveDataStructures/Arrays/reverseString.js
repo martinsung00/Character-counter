@@ -17,5 +17,3 @@ function reverseString(string) {
 console.log(reverseString('hello'));
 
 //Time 5:14
-
-

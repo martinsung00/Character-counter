@@ -12,7 +12,7 @@ function capitalizeWords(string) {
   for (i = 0; i < splitStr.length; i++) {
 // For each word, forge a new word with a capitalized first letter combined with everything else behind it.
     splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
-    }
-    return splitStr.join(' ');
+  }
+  return splitStr.join(' ');
 }
 console.log(capitalizeWords('hello world'))

@@ -22,7 +22,7 @@ function removeFromArrayVer2(inputArray, indexLocation) {
     let firstHalf = [];
     let secondHalf = [];
     let concatArray = [];
-// The loop will read through the input array until it reaches the number before the index location.
+    
     for (i = 0; i < inputArray.length; i++) {
 // All the numbers before the index location will be stored within the first half of the array.
         if (i < indexLocation) {

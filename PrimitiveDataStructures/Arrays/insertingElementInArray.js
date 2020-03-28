@@ -24,9 +24,8 @@ function insertIntoArrayVer2(inputArray, elementToAdd, indexLocation) {
     let firstHalf = [];
     let secondHalf = [];
     let concatArray = [];
-// The loop will look into the array until it reaches the desired index location.
+    
     for (i = 0; i < inputArray.length; i++) {
-// When the loop finds the index location, it will push the first half of the array into firstHalf.
         if (i < indexLocation) {
             firstHalf.push(inputArray[i]);
 // Afterwards, everything else after the the index location will be placed into the second half array.
