@@ -3,21 +3,17 @@
 
 // Function is declared, and will take in the desired position of the Fibonacci number represented by (n)
 const findFibNum = (n) => {
-// The first number of the Fib sequence is 0
+// The first number of the Fib sequence is 0, second number to 1, and new number represents the sum of first and second.
         let firstNum = 0;
-// The second number of the Fib sequence is 1
         let secondNum = 1;
-// New number represents the firstNumber + the secondNumber
         let newNum = 1;
-// fibNum represents the end result   
         let fibNum = ''
-// Prevent bad input by returning null if the number is negative or a string
+
         if (n < 0 || n === (String)) {
             return null;
 // If the position is 0, naturally that is the starting position which will return 0
         } else if (n === 0) {
             return 0;
-// For loop in calculating the position
         } else if (n > 0) {
             for (i = 1; i < n; i++) {
   //To get to the next position (new number), add first number and second number

@@ -29,4 +29,4 @@ function reverseInteger(integer) {
     
 };
 
-console.log(reverseInteger(-981));
+console.log(reverseInteger(-100));
