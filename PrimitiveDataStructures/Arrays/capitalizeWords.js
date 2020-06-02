@@ -9,7 +9,7 @@
 function capitalizeWords(string) {
 // Split up the string to capitalize each word.
   let splitStr = string.split(' ');  
-  for (i = 0; i < splitStr.length; i++) {
+  for (let i = 0; i < splitStr.length; i++) {
 // For each word, forge a new word with a capitalized first letter combined with everything else behind it.
     splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
   }
