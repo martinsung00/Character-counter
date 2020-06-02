@@ -11,7 +11,7 @@ function characterFrequency(string) {
 // The second variable will store the letter and frequencies as a key/value pair.
     let frequencies = {};
     let letterCount = 0;
-    for (i = 0; i < string.length; i++) {
+    for (let i = 0; i < string.length; i++) {
         let currentLetter = string[i];
 // If it is the first time we've seen it, give the letter a value of 1. If we have already seen it, add one to the occurrence of the letter.
         if (frequencies[currentLetter] === undefined) {
