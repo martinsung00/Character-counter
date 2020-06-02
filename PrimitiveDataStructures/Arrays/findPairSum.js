@@ -6,7 +6,7 @@ console.log(pair); // --> [4, 5]
 function findPairForSum(integers, target) {
     // For every number in the set of numbers we are going to add every number in the set to it to see if it equals the target number.
     let pair = [];
-    for (i = 0; i < integers.length; i++) {
+    for (let i = 0; i < integers.length; i++) {
         let baseNumber = integers[i];
         for (n = 0; n < integers.length; n++) {
             let currentSum = integers[n] + baseNumber;
